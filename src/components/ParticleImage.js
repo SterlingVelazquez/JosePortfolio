@@ -102,13 +102,5 @@ export default function particles() {
             requestAnimationFrame( animate );
         }
         animate();
-
-        function calculateBrightness(red, green, blue){
-            return Math.sqrt(
-                (red * red) * 0.299 +
-                (green * green) * 0.587 +
-                (blue * blue) * 0.114
-            );
-        }
     })
 }
